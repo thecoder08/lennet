@@ -1,3 +1,5 @@
+var requestHandlers = {};
+var serverInstance = function() {};
 module.exports = {
   registerRequestHandler: function(id, handler) {
     requestHandlers[id] = handler;
@@ -7,8 +9,6 @@ module.exports = {
   },
   init: function(port) {
     var http = require('@thecoder08/http');
-    var requestHandlers = {};
-    var serverInstance = function() {};
     http.server(port, function(req, res, redirect) {
       if (req.pathname == '/getlennetlobbyid') {
         var letter1 = String.fromCharCode(Math.round(Math.random() * 26) + 64);
@@ -24,7 +24,7 @@ module.exports = {
           requestHandlers[req.query.lennetlobbyid](req, res);
         }
         else {
-          res(404, 'text/plain', '404 lobby not found')
+          res(404, 'text/plain', '404 lobby ' + req.query.lennetlobbyid + ' not found')
         }
       }
     });

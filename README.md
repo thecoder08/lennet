@@ -176,7 +176,7 @@ var lennet = require('@thecoder08/lennet');
 lennet.setServerInstance(function(id) {
 var fs = require('fs');
 var people = {};
-console.log('Server ' + id + ' running. Type "help" for help.');
+console.log('Server instance ' + id + ' running.');
 lennet.registerRequestHandler(id, function(req, res) {
   if (req.pathname == '/get') {
     res(200, 'text/plain', JSON.stringify(people));
