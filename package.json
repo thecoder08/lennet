@@ -1,0 +1,22 @@
+{
+  "name": "@thecoder08/lennet",
+  "version": "1.0.1",
+  "description": "A service to let multiplayer game instances run easier.",
+  "main": "lennet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thecoder08/lennet.git"
+  },
+  "author": "thecoder08",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thecoder08/lennet/issues"
+  },
+  "homepage": "https://github.com/thecoder08/lennet#readme",
+  "dependencies": {
+    "@thecoder08/http": "^1.0.2"
+  }
+}
