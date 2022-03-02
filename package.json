@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/thecoder08/lennet#readme",
   "dependencies": {
-    "@thecoder08/http": "^1.0.2"
+    "@thecoder08/http": "github:thecoder08/http"
   }
 }
