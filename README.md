@@ -12,4 +12,4 @@ Lennet will listen for requests on a port that you specify and start server inst
 
 It will respond to getlennetlobbyid requests with the last three digits of the port that the server is running on (the "Lobby ID"). You can get the port by adding a 65 to the beginning of the lobby ID.
 
-To use Lennet, get a cloud hosting server (like the free plan from GCP) and open ports 65000-65535, as well as whatever port Lennet is listening for requests on.
+To use Lennet, get a cloud hosting server (like the free tier from Google Cloud) and open ports 65000-65535, as well as whatever port Lennet is listening for requests on.
